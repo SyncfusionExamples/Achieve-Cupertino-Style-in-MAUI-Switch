@@ -21,8 +21,8 @@ This sample demonstrates how to achieve a Cupertino-style appearance in the MAUI
                                                         ThumbStroke="White"
                                                         ThumbHeightRequest="27"
                                                         ThumbWidthRequest="27"
-                                                        TrackBackground="GreenYellow"
-                                                        TrackStroke="LawnGreen"/>
+                                                        TrackBackground="DodgerBlue"
+                                                        TrackStroke="DodgerBlue"/>
                                             </Setter.Value>
                                         </Setter>
                                     </VisualState.Setters>
@@ -36,8 +36,8 @@ This sample demonstrates how to achieve a Cupertino-style appearance in the MAUI
                                                         ThumbStroke="White"
                                                         ThumbHeightRequest="27"
                                                         ThumbWidthRequest="27"
-                                                        TrackBackground="Gray"
-                                                        TrackStroke="DimGray"/>
+                                                        TrackBackground="LightGrey"
+                                                        TrackStroke="LightGrey"/>
                                             </Setter.Value>
                                         </Setter>
                                     </VisualState.Setters>
