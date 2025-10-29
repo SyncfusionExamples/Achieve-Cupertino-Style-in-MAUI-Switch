@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons"
+             x:Class="SwitchSample.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="CupertinoStyle" TargetType="buttons:SfSwitch">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <Setter.Value>
+                        <VisualStateGroupList>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="On">
+                                    <VisualState.Setters>
+                                        <Setter Property="SwitchSettings">
+                                            <Setter.Value>
+                                                <buttons:SwitchSettings
+                                                        ThumbBackground="White"
+                                                        ThumbStroke="White"
+                                                        ThumbHeightRequest="27"
+                                                        ThumbWidthRequest="27"
+                                                        TrackBackground="DodgerBlue"
+                                                        TrackStroke="DodgerBlue"/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Off">
+                                    <VisualState.Setters>
+                                        <Setter Property="SwitchSettings">
+                                            <Setter.Value>
+                                                <buttons:SwitchSettings
+                                                        ThumbBackground="White"
+                                                        ThumbStroke="White"
+                                                        ThumbHeightRequest="27"
+                                                        ThumbWidthRequest="27"
+                                                        TrackBackground="LightGrey"
+                                                        TrackStroke="LightGrey"/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateGroupList>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout>
+
+        <buttons:SfSwitch Style="{StaticResource CupertinoStyle}"/>
+
+        <Label Text="Cupertino" FontSize="18" HorizontalOptions="Center"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>
